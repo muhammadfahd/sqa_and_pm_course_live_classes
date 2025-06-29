@@ -16,6 +16,9 @@
   - [📚 Course Overview](#-course-overview)
   - [Course Sheet](#course-sheet)
   - [Course outline](#course-outline)
+  - [Important Slides](#important-slides)
+  - [Other Resources](#other-resources)
+  - [🙋‍♂️ Find Me](#️-find-me)
 
 
 ---
@@ -51,4 +54,30 @@ Below is the course outline
 [Click Here ](https://docs.google.com/document/d/1HrB7EZ5qeNrVaQMQxxsLzojRKMxaA29gbRyjxLDV_lg/edit?tab=t.0)
 ![alt text](./Images/outline.png)
 
+## Important Slides 
+Below are some of the slide that i present during the class
+check out the folder **Important Lecture Notes**
+
+## Other Resources
+
+While the main learning materials are covered in the course outline and slides, you’ll also find additional helpful resources in this repository, including:
+
+- 🧪 **Sample Projects** — End-to-end Food Delivery App for QA & PM simulation  
+- 📝 **Excel Templates** — Test cases, traceability matrix, test plan, risk register, etc.  
+- 🧰 **Automation Scripts** — Selenium test scripts for login, cart, and order workflows  
+- 🔧 **JIRA Screenshots** — Examples of sprint boards, dashboards, bug reports  
+- 🌐 **Useful Links** — Docs, tools, and references used throughout the course
+
+Make sure to explore the subfolders like `Week 4.5`, `Last Day`, and `Important Lecture Notes` for final content summaries, recap presentations, and practical files.
+
+-----
+## 🙋‍♂️ Find Me
+
+If you found this course useful or want to collaborate on QA, testing, or project management initiatives, feel free to connect with me:
+
+- 💼 [LinkedIn – Muhammad Fahad Bashir ](https://www.linkedin.com/in/mfahadbashir/)
+- 💻 [GitHub – muhammadfahd](https://github.com/muhammadfahd)
+- 📧 [Email](bashirfahad789@gmail.com)
+
+I’m always open to learning, mentoring, and contributing to impactful tech projects. 🚀
 

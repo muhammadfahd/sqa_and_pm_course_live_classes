@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Case Practice Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .output {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>User Registration Form</h2>
+    <form id="registrationForm">
+        <label for="age">Age (18-60):</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="password">Password (min 8 characters):</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="guest">Guest</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="terms"> Accept Terms & Conditions
+        </label>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <div class="output" id="output"></div>
+</div>
+
+<script>
+function validateForm() {
+    const age = parseInt(document.getElementById("age").value);
+    const password = document.getElementById("password").value;
+    const role = document.getElementById("role").value;
+    const termsAccepted = document.getElementById("terms").checked;
+
+    let output = "";
+
+    if (isNaN(age) || age < 18 || age > 60) {
+        output += "❌ Age must be between 18 and 60.<br>";
+    } else {
+        output += "✅ Age is valid.<br>";
+    }
+
+    if (password.length < 8) {
+        output += "❌ Password must be at least 8 characters.<br>";
+    } else {
+        output += "✅ Password is valid.<br>";
+    }
+
+    if (!termsAccepted) {
+        output += "❌ You must accept the terms and conditions.<br>";
+    } else {
+        output += "✅ Terms accepted.<br>";
+    }
+
+    if (role === "admin" && age >= 18 && age <= 60 && password.length >= 8 && termsAccepted) {
+        output += "🎉 Admin access granted!";
+    }
+
+    document.getElementById("output").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
